@@ -1,0 +1,14 @@
+.tableHeader {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.headText {
+    font-size: 24px;
+    font-family: 'Dela Gothic One', cursive;
+    border-right: 1px solid black;
+}
+.headText:last-of-type {
+    border-right: none;
+}

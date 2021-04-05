@@ -1,0 +1,51 @@
+.headtext {
+    font-size: 7em;
+    background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%,rgba(253,187,45,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Train One', cursive;
+}
+.headtext2 {
+    font-size: 4em;
+    background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%,rgba(253,187,45,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Train One', cursive;
+}
+.fsbtn {
+    font-size: 24px!important;
+}
+
+@media all and (max-width: 1024px) {
+    .headtext {
+        font-size: 5em;
+    }
+    .headtext2 {
+        font-size: 3em;
+    }
+    .fsbtn {
+        font-size: 20px!important;
+    }
+}
+@media all and (max-width: 768px) {
+    .headtext {
+        font-size: 3em;
+    }
+    .headtext2 {
+        font-size: 2em;
+    }
+    .fsbtn {
+        font-size: 16px!important;
+    }
+}
+@media all and (max-width: 500px) {
+    .headtext {
+        font-size: 2em;
+    }
+    .headtext2 {
+        font-size: 1em;
+    }
+    .fsbtn {
+        font-size: 16px!important;
+    }
+}
