@@ -34,7 +34,7 @@ class Transfer extends Component {
     render() { 
         return (
             <div className="container mt-5">
-                <div className="shadow py-4" style={{width: "70%", margin: "auto"}}>
+                <div className={classes.outerForm + " shadow py-4"}>
                     <h1>Transfer Form</h1>
                     <form className={classes.transferForm}>
                         <div className={classes.formRow}>
@@ -52,7 +52,7 @@ class Transfer extends Component {
                         <input type="text" placeholder="Transfer Amount"
                                 value={this.state.amount}
                                 onChange={this.onAmountChange}
-                                style={{width: "30%", margin: "20px auto"}} />
+                                className={classes.amountInput} />
                         <div className={classes.btnGroup}>
                             <NavLink to="/result">
                                 <button onClick={this.balanceUpdates} className="btn btn-success">Transfer</button>
