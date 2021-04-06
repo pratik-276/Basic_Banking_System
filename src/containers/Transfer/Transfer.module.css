@@ -1,0 +1,61 @@
+.outerForm {
+    width: 70%;
+    margin: auto;
+}
+.transferForm {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.transferForm input {
+    padding: 10px;
+    margin: 20px 5px;
+    font-size: 22px;
+    outline: none;
+}
+.formRow {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.formRow input:nth-child(1) {
+    width: 55%;
+}
+.formRow input:nth-child(2) {
+    width: 45%;
+}
+.amountInput {
+    width: 30%;
+    margin: 20px 0px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btnGroup button {
+    margin: 20px 10px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+@media (max-width: 500px) {
+    .outerForm {
+        width: 95%;
+        margin: auto;
+    }
+    .transferForm input {
+        padding: 5px;
+        margin: 20px 5px;
+        font-size: 16px;
+        outline: none;
+    }
+    .formRow input:nth-child(1) {
+        width: 55%;
+    }
+    .formRow input:nth-child(2) {
+        width: 45%;
+    }
+    .amountInput {
+        width: 50%;
+    }
+}

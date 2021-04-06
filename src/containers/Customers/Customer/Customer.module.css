@@ -28,3 +28,24 @@
 .custRow1 p:nth-child(5) {
     width: 25%;
 }
+
+@media (max-width :500px) {
+    .custRow1 p {
+        font-size: 14px;
+    }
+    .custRow1 p:nth-child(1) {
+        width: 8%;
+    }
+    .custRow1 p:nth-child(2) {
+        width: 16%;
+    }
+    .custRow1 p:nth-child(3) {
+        width: 31%;
+    }
+    .custRow1 p:nth-child(4) {
+        width: 25%;
+    }
+    .custRow1 p:nth-child(5) {
+        width: 20%;
+    }
+}
