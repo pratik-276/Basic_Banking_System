@@ -2,7 +2,6 @@
   "name": "basic_banking_system",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://pratik-276.github.io/Basic_Banking_System",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
@@ -27,9 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
