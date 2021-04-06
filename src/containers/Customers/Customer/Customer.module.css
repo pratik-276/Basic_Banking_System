@@ -5,6 +5,8 @@
     background-color: #eeeeee;
     margin: 10px auto;
     border-radius: 5px;
+    text-decoration: none!important;
+    color: black!important;
 }
 .custRow1 p {
     font-size: 20px;
