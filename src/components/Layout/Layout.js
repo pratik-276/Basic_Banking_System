@@ -4,12 +4,14 @@ import { Switch, Route } from 'react-router-dom';
 import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Customers from '../../containers/Customers/Customers';
+import Customer from '../Customer/Customer';
 
 const Layout = () => {
     return (
         <div>
             <Header />
             <Switch>
+                <Route path="/customer/:id" component={Customer} />
                 <Route path="/customers" component={Customers} />
                 <Route path="/" component={Home} />
             </Switch>

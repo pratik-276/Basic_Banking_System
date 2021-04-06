@@ -3,6 +3,7 @@ import classes from './Customers.module.css';
 
 import {connect} from 'react-redux';
 import * as actions from '../../store/actions/index';
+import Customer from './Customer/Customer';
 
 class Customers extends Component {
     state = {  }
@@ -12,8 +13,8 @@ class Customers extends Component {
     }
     render() { 
         return (
-            <div className="container mt-5">
-                <div className={classes.custRow + " row"}>
+            <div className="container my-5">
+                <div className={classes.custRow}>
                     <p>Sl No</p>
                     <p>UserName</p>
                     <p>Email</p>
@@ -21,13 +22,9 @@ class Customers extends Component {
                     <p>Current Balance</p>
                 </div>
                 {this.props.users.map((user, index) => (
-                    <div className={classes.custRow1 + " row"}>
-                        <p>{index}</p>
-                        <p>{user.username}</p>
-                        <p>{user.email}</p>
-                        <p>{user.mobileNumber}</p>
-                        <p>{user.currentBalance}</p>
-                    </div>
+                    <Customer user={user} 
+                            key={'_' + Math.random().toString(36).substr(2, 9)}
+                            index={index+1} />
                 ))}
             </div>
         );

@@ -11,13 +11,15 @@ import thunk from 'redux-thunk';
 import axios from 'axios';
 
 import userReducer from './store/reducers/user';
+import transferReducer from './store/reducers/transfer';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 axios.defaults.baseURL = "https://basic-banking-app-abfa0-default-rtdb.firebaseio.com/";
 
 const rootReducer = combineReducers({
-  user: userReducer
+  user: userReducer,
+  transfer: transferReducer
 });
 
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
