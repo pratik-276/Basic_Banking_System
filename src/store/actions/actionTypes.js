@@ -1,3 +1,7 @@
 export const GET_ALL_USERS = "GET_ALL_USERS";
 
 export const ADD_SENDER = "ADD_SENDER";
+export const ADD_RECEIVER = "ADD_RECEIVER";
+
+export const UPDATE_BALANCES = "UPDATE_BALANCES";
+export const TRANSFER_SUCCESS = "TRANSFER_SUCCESS";

@@ -1,0 +1,29 @@
+
+.transferForm {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.transferForm input {
+    padding: 10px;
+    margin: 20px 5px;
+    font-size: 22px;
+    outline: none;
+}
+.formRow {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.formRow input:nth-child(1) {
+    width: 55%;
+}
+.formRow input:nth-child(2) {
+    width: 45%;
+}
+
+.btnGroup button {
+    margin: 20px 10px;
+    padding: 10px 30px;
+    font-size: 20px;
+}

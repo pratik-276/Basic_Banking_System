@@ -31,7 +31,9 @@ const Customer = (props) => {
                 </div>
             </div>
             <div className={classes.btnGroup}>
-                <button className="btn btn-primary">Transfer</button>
+                <NavLink to="/receiver">
+                    <button className="btn btn-primary">Proceed</button>
+                </NavLink>
                 <NavLink to="/customers">
                     <button className="btn btn-danger">Go Back</button>
                 </NavLink>

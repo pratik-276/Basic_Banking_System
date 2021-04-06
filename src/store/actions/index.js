@@ -3,5 +3,7 @@ export {
 } from './user';
 
 export {
-    addSender
+    addSender,
+    addReceiver,
+    updateBalances
 } from './transfer';
