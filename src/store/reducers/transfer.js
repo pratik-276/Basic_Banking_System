@@ -45,6 +45,10 @@ const reducer = (state=initialState, action) => {
             return updateObject(state, {
                 transfer: true
             });
+        case actionTypes.TRANSFER_COMPLETE:
+            return updateObject(state, {
+                transfer: false
+            });
         default:
             return state;
     }

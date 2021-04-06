@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import {connect} from 'react-redux';
+import * as actionTypes from '../../store/actions/actionTypes';
 
 import Header from '../Header/Header';
 import Home from '../Home/Home';
@@ -15,6 +16,7 @@ const Layout = (props) => {
     let result = Transfer;
     if(props.transfer){
         result = Home;
+        props.transferComplete();
     }
     return (
         <div>
@@ -37,5 +39,11 @@ const mapStatetoProps = state => {
         transfer: state.transfer.transfer
     }
 }
+
+const mapDispatchtoProps = dispatch => {
+    return {
+        transferComplete: () => dispatch({type: actionTypes.TRANSFER_COMPLETE})
+    }
+}
  
-export default connect(mapStatetoProps)(Layout);
+export default connect(mapStatetoProps, mapDispatchtoProps)(Layout);
