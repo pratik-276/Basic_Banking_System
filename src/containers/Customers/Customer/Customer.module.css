@@ -31,7 +31,7 @@
 
 @media (max-width :500px) {
     .custRow1 p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .custRow1 p:nth-child(1) {
         width: 8%;

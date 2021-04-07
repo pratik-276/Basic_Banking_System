@@ -24,3 +24,9 @@
     padding: 10px 30px;
     font-size: 20px;
 }
+
+@media (max-width: 500px) {
+    .custElement p {
+        font-size: 20px;
+    }
+}
