@@ -4,6 +4,7 @@ import classes from './Transfer.module.css';
 import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
 import * as actions from '../../store/actions/index';
+import * as actionTypes from '../../store/actions/actionTypes';
 
 import {toast} from 'react-toastify';
 
@@ -22,6 +23,7 @@ class Transfer extends Component {
         }else if(this.state.amount > this.props.sender.currentBalance){
             toast.error("Transfer amount larger than sender balance");
         }else{
+            this.props.updateTransfer();
             const sData = {
                 ...this.props.sender,
                 currentBalance: this.props.sender.currentBalance - this.state.amount
@@ -79,7 +81,8 @@ const mapStatetoProps = state => {
 
 const mapDispatchtoProps = dispatch => {
     return {
-        updateBalances: (sd, rd) => dispatch(actions.updateBalances(sd, rd))
+        updateBalances: (sd, rd) => dispatch(actions.updateBalances(sd, rd)),
+        updateTransfer: () => dispatch({type: actionTypes.TRANSFER_SUCCESS})
     }
 }
  
