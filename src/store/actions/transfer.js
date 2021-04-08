@@ -28,7 +28,6 @@ const updateReceiver = rData => {
     return dispatch => {
         axios.put("users/"+rData.id+".json", rData)
             .then(response => {
-                dispatch(updateTransfer());
                 toast.success("Transfer Succesful");
             }).catch(err => {
                 console.log(err);
@@ -40,6 +39,7 @@ export const updateBalances = (sData, rData) => {
     return dispatch => {
         axios.put("users/"+sData.id+".json", sData)
             .then(response => {
+                dispatch(updateTransfer());
                 dispatch(updateReceiver(rData));
             }).catch(err => {
                 console.log(err);

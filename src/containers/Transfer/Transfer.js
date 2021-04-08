@@ -56,7 +56,7 @@ class Transfer extends Component {
                                 onChange={this.onAmountChange}
                                 className={classes.amountInput} />
                         <div className={classes.btnGroup}>
-                            <NavLink to="/">
+                            <NavLink to="/result">
                                 <button onClick={this.balanceUpdates} className="btn btn-success">Transfer</button>
                             </NavLink>
                             <NavLink to="/">
