@@ -15,8 +15,10 @@ class Transfer extends Component {
         this.setState({amount: event.target.value});
     }
     balanceUpdates = () => {
-        if(!this.state.amount){
-            toast.error("Field empty");
+        const pattern = /^\d+$/;
+
+        if(!pattern.test(this.state.amount)){
+            toast.error("Invalid amount");
         }else if(this.state.amount > this.props.sender.currentBalance){
             toast.error("Transfer amount larger than sender balance");
         }else{
