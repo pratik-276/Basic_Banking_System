@@ -4,12 +4,14 @@ import classes from './Customers.module.css';
 import {connect} from 'react-redux';
 import * as actions from '../../store/actions/index';
 import Customer from './Customer/Customer';
+import * as actionTypes from '../../store/actions/actionTypes';
 
 class Customers extends Component {
     state = {  }
 
     componentWillMount() {
-        this.props.getAllUsers();        
+        this.props.getAllUsers();
+        this.props.updateTransfer();       
     }
     render() { 
         return (
@@ -43,7 +45,8 @@ const mapStatetoProps = state => {
 const mapDispatchtoProps = dispatch => {
     return {
         getAllUsers: () => dispatch(actions.getAllUsers()),
-        addSender: (data) => dispatch(actions.addSender(data))
+        addSender: (data) => dispatch(actions.addSender(data)),
+        updateTransfer: () => dispatch({type: actionTypes.TRANSFER_COMPLETE})
     }
 }
 
