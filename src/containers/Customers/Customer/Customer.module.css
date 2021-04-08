@@ -7,6 +7,10 @@
     border-radius: 5px;
     text-decoration: none!important;
     color: black!important;
+    border-left: 5px solid transparent;
+}
+.custRow1:hover {
+    border-left: 5px solid blue;
 }
 .custRow1 p {
     font-size: 20px;

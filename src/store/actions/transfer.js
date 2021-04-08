@@ -18,11 +18,11 @@ export const addReceiver = (data) => {
     }
 }
 
-const updateTransfer = () => {
-    return {
-        type: actionTypes.TRANSFER_SUCCESS
-    }
-}
+// const updateTransfer = () => {
+//     return {
+//         type: actionTypes.TRANSFER_SUCCESS
+//     }
+// }
 
 const updateReceiver = rData => {
     return dispatch => {
@@ -39,7 +39,7 @@ export const updateBalances = (sData, rData) => {
     return dispatch => {
         axios.put("users/"+sData.id+".json", sData)
             .then(response => {
-                dispatch(updateTransfer());
+                // dispatch(updateTransfer());
                 dispatch(updateReceiver(rData));
             }).catch(err => {
                 console.log(err);
