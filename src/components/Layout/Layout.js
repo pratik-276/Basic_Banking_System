@@ -11,11 +11,10 @@ import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Result from '../Result/Result';
 import Transactions from '../../containers/Transactions/Transactions';
-import classes from './Layout.module.css';
 
 const Layout = (props) => {
     return (
-        <div className={classes.spbg}>
+        <div>
             <Header />
             <Switch>
                 <Route path="/transfers" component={Transactions} />
