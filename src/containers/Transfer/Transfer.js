@@ -33,6 +33,12 @@ class Transfer extends Component {
                 currentBalance: parseInt(this.props.receiver.currentBalance) + parseInt(this.state.amount)
             }
             this.props.updateBalances(sData, rData);
+            const tData = {
+                sender: sData.email,
+                receiver: rData.email,
+                amount: parseInt(this.state.amount)
+            }
+            this.props.addTransaction(tData);
         }
     }
     render() { 
@@ -82,7 +88,8 @@ const mapStatetoProps = state => {
 const mapDispatchtoProps = dispatch => {
     return {
         updateBalances: (sd, rd) => dispatch(actions.updateBalances(sd, rd)),
-        updateTransfer: () => dispatch({type: actionTypes.TRANSFER_SUCCESS})
+        updateTransfer: () => dispatch({type: actionTypes.TRANSFER_SUCCESS}),
+        addTransaction: (data) => dispatch(actions.addTransaction(data))
     }
 }
  

@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import classes from './Home.module.css';
 
 import {NavLink} from 'react-router-dom';
+import {connect} from 'react-redux';
+import * as actions from '../../store/actions/index';
 
 class Home extends Component {
     state = {  }
+    componentWillMount() {
+        this.props.getAllTransactions();      
+    }
     render() {
         return (
             <div className="container align-items-center mt-5">
@@ -18,8 +23,15 @@ class Home extends Component {
                     <NavLink to="/customers" style={{
                         textDecoration: "none"
                     }}>
-                        <p className={classes.fsbtn + " btn btn-success my-3 py-3 px-4"}>
-                            View All Customers
+                        <p className={classes.fsbtn + " btn btn-success my-3 mx-2"}>
+                            Make Transfer
+                        </p>
+                    </NavLink>
+                    <NavLink to="/transfers" style={{
+                        textDecoration: "none"
+                    }}>
+                        <p className={classes.fsbtn + " btn btn-primary my-3 mx-2"}>
+                            View All Transfers
                         </p>
                     </NavLink>
                 </div>
@@ -27,5 +39,11 @@ class Home extends Component {
         );
     }
 }
+
+const mapDispatchtoProps = dispatch => {
+    return {
+        getAllTransactions: () => dispatch(actions.getTransactions())
+    }
+}
  
-export default Home;
+export default connect(null, mapDispatchtoProps)(Home);
