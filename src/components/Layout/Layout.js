@@ -10,12 +10,14 @@ import Transfer from '../../containers/Transfer/Transfer';
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Result from '../Result/Result';
+import Transactions from '../../containers/Transactions/Transactions';
 
 const Layout = (props) => {
     return (
         <div>
             <Header />
             <Switch>
+                <Route path="/transfers" component={Transactions} />
                 <Route path="/result" component={Result} />
                 <Route path="/transfer" component={Transfer} />
                 <Route path="/receiver" component={Receiver} />

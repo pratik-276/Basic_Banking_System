@@ -7,3 +7,8 @@ export {
     addReceiver,
     updateBalances
 } from './transfer';
+
+export {
+    getTransactions,
+    addTransaction
+} from './transaction';

@@ -14,6 +14,7 @@
 }
 .fsbtn {
     font-size: 24px!important;
+    padding: 1rem 1.5rem!important;
 }
 .spbg {
     background-color: #85FFBD;
@@ -21,7 +22,7 @@ background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 
 }
 
-@media all and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .headtext {
         font-size: 5em;
     }
@@ -32,7 +33,7 @@ background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
         font-size: 20px!important;
     }
 }
-@media all and (max-width: 768px) {
+@media (max-width: 768px) {
     .headtext {
         font-size: 3em;
     }
@@ -43,14 +44,15 @@ background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
         font-size: 16px!important;
     }
 }
-@media all and (max-width: 500px) {
+@media (max-width: 500px) {
     .headtext {
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .headtext2 {
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .fsbtn {
         font-size: 16px!important;
+        padding: 10px!important;
     }
 }

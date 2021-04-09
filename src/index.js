@@ -12,6 +12,7 @@ import axios from 'axios';
 
 import userReducer from './store/reducers/user';
 import transferReducer from './store/reducers/transfer';
+import transactionReducer from './store/reducers/transaction';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -19,7 +20,8 @@ axios.defaults.baseURL = "https://basic-banking-app-abfa0-default-rtdb.firebasei
 
 const rootReducer = combineReducers({
   user: userReducer,
-  transfer: transferReducer
+  transfer: transferReducer,
+  transaction: transactionReducer
 });
 
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
