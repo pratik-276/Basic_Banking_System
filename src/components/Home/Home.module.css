@@ -15,6 +15,11 @@
 .fsbtn {
     font-size: 24px!important;
 }
+.spbg {
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
 
 @media all and (max-width: 1024px) {
     .headtext {

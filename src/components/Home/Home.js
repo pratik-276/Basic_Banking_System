@@ -7,7 +7,7 @@ class Home extends Component {
     state = {  }
     render() {
         return (
-            <div className="container align-items-center mt-5">
+            <div className={classes.spbg + " container align-items-center mt-5"}>
                 <div className="row justify-content-center">
                     <p className={classes.headtext + " text-white font-weight-bold my-3"}>Account for a day</p>
                 </div>
