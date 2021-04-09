@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 const Result = (props) => {
     return (
         <div className={classes.result + " container"}>
-            <img className="my-3" alt="success" src={props.transfer ? "/success.png" : "/fail.png"} />
+            <img className="my-3" alt="success" src={props.transfer ? "/success1.jpg" : "/fail.jpg"} />
             <h3>Transfer {props.transfer ? "Successful" : "Failed"}</h3>
             <NavLink to="/">
                 <button className="btn btn-danger">Go back to Home</button>

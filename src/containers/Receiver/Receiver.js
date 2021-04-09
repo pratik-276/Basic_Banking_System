@@ -10,7 +10,7 @@ class Receiver extends Component {
     render() {
         const newUsers = this.props.users.filter(user => user.email!==this.props.sender.email);
         return (
-            <div className="container my-5">
+            <div className="container py-5">
                 <h1>Send money to....</h1>
                 <div className={classes.custRow}>
                     <p>Sl No</p>

@@ -44,7 +44,7 @@ class Transfer extends Component {
     render() { 
         return (
             <div className="container mt-5">
-                <div className={classes.outerForm + " shadow py-4"}>
+                <div className={classes.outerForm + " shadow bg-white py-4"}>
                     <h1>Transfer Form</h1>
                     <form className={classes.transferForm}>
                         <div className={classes.formRow}>

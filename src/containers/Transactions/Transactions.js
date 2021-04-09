@@ -12,7 +12,7 @@ class Transactions extends Component {
     // }
     render() { 
         return (
-            <div className="container my-5">
+            <div className="container py-5">
                 <h1>Transactions</h1>
                 <div className={classes.custRow}>
                     <p>Sl No</p>

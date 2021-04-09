@@ -16,11 +16,7 @@
     font-size: 24px!important;
     padding: 1rem 1.5rem!important;
 }
-.spbg {
-    background-color: #85FFBD;
-background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 
-}
 
 @media (max-width: 1024px) {
     .headtext {
