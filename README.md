@@ -15,4 +15,21 @@
 </p>
 
 <h2 align="center">Frontend Docs</h2>
-### HOME PAGE
+<h3>HOME PAGE</h3>
+<img src="https://raw.githubusercontent.com/pratik-276/Basic_Banking_System/main/Images/homepage.PNG?token=ALXMAX5DNNT7U2SEBPNGVF3API3HG" />
+
+<h3>Sender Selection Page</h3>
+<img src="https://raw.githubusercontent.com/pratik-276/Basic_Banking_System/main/Images/sender.PNG?token=ALXMAX3T6ZKWA3OIZRUG5B3API3LG" />
+
+<h3>Receiver Selection Page</h3>
+<img src="https://raw.githubusercontent.com/pratik-276/Basic_Banking_System/main/Images/receiver.PNG?token=ALXMAXZ5MALNXADJ6AJT3STAPI3OU" />
+
+<h3>Amount transfer Page</h3>
+<img src="https://raw.githubusercontent.com/pratik-276/Basic_Banking_System/main/Images/transfer.PNG?token=ALXMAX6EQHLFMLAQ5KECGULAPI3RS" />
+
+<h3>All Transactions Page</h3>
+<img src="https://raw.githubusercontent.com/pratik-276/Basic_Banking_System/main/Images/transactions.PNG?token=ALXMAX4Y5HLQZ533HEZW6DLAPI3UK" />
+
+<p>The application does not contain any user login or authentication of any sort. Hence the transactions made by anyone can be visited by all others.</p>
+
+<p>This application is made as error safe as possible. Let me know if you find any glitch or bug. Do drop a ⭐ if you like it.</p>
