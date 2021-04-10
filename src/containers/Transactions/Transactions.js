@@ -19,6 +19,7 @@ class Transactions extends Component {
                     <p>Sender</p>
                     <p>Receiver</p>
                     <p>Amount</p>
+                    <p>State</p>
                 </div>
                 {Object.keys(this.props.transactions).map((transaction, index) => (
                     <Transaction transaction={this.props.transactions[transaction]} 

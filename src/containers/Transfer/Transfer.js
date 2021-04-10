@@ -20,8 +20,22 @@ class Transfer extends Component {
 
         if(!pattern.test(this.state.amount)){
             toast.error("Invalid amount");
+            const tData = {
+                sender: this.props.sender.email,
+                receiver: this.props.receiver.email,
+                amount: parseInt(this.state.amount),
+                state: "failure"
+            }
+            this.props.addTransaction(tData);
         }else if(this.state.amount > this.props.sender.currentBalance){
             toast.error("Transfer amount larger than sender balance");
+            const tData = {
+                sender: this.props.sender.email,
+                receiver: this.props.receiver.email,
+                amount: parseInt(this.state.amount),
+                state: "failure"
+            }
+            this.props.addTransaction(tData);
         }else{
             this.props.updateTransfer();
             const sData = {
@@ -36,7 +50,8 @@ class Transfer extends Component {
             const tData = {
                 sender: sData.email,
                 receiver: rData.email,
-                amount: parseInt(this.state.amount)
+                amount: parseInt(this.state.amount),
+                state: "success"
             }
             this.props.addTransaction(tData);
         }
