@@ -14,6 +14,14 @@
   <img alt="NodeJS" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
 </p>
 
+<h2 align="center">On your system</h2>
+<ol>
+  <li>Download or clone the repository files</li>
+  <li>Open command prompt to the file</li>
+  <li>npm install && npm start</li>
+</ol>
+<p>This will start the development server at port 3000</p>
+
 <h2 align="center">Frontend Docs</h2>
 <h3>HOME PAGE</h3>
 <img src="https://raw.githubusercontent.com/pratik-276/Basic_Banking_System/main/Images/homepage.PNG?token=ALXMAX5DNNT7U2SEBPNGVF3API3HG" />
